@@ -35,6 +35,10 @@ public class Parking {
         System.out.println("Now parking have : " + places + " places");
     }
 
+    public boolean removeCar(Car car){
+        return cars.remove(car);
+    }
+    
     public void addNewCar(Car car){
        if(FreePlaces == 0){
            System.out.println("We have no free places, wait please.");
