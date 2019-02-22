@@ -40,9 +40,7 @@ public class Car implements Comparable<Car>{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Car car = (Car) o;
-        return weight == car.weight &&
-                isAutomat == car.isAutomat &&
-                Objects.equals(name, car.name) &&
+        return Objects.equals(name, car.name) &&
                 color == car.color;
     }
 
